@@ -1,35 +1,61 @@
-# Simulador RAM
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Los programas a cargar en la máquina RAM y los contenidos de las cintas de entrada
-y de salida deben estar en tres ficheros diferentes, y sus nombres deben poder ser
-introducidos mediante teclado.
+# Random Access Machine Simulator - C++ (University Project)
 
-## Ejecución
+## 📝 Description
 
-• El simulador debe ejecutarse del siguiente modo:
+This project implements a simulator for a **Random Access Machine (RAM)** in C++. It allows execution of programs written in a simplified RAM language, using input and output tapes stored in separate files.
 
-```./ram_sim ram_program.ram input_tape.in output_tape.out debug```
+The simulator supports a debug mode that provides step-by-step execution with visual feedback on registers, tapes, and program state.
 
-- ram_program.ram: fichero con el programa RAM.
-- input_tape.in: fichero con el contenido de la cinta de entrada.
-- output_tape.out: fichero con el contenido de la cinta de salida.
-- debug: Si el valor de este parámetro es 1, se presentará un menú de
-características similares al siguiente figura y, permitirá ejecutar cada una
-de sus opciones, mostrando en cada paso de ejecución la instrucción
-ejecutada y el estado de la máquina.
+---
 
-```
+### 🔧 How to Run
+
+To execute the simulator, use the following format:
+
+./ram_sim ram_program.ram input_tape.in output_tape.out debug
+
+- ram_program.ram: file containing the RAM program.  
+- input_tape.in: file containing the input tape.  
+- output_tape.out: file where the output tape will be written.  
+- debug: set to 1 to activate interactive debug mode, or 0 to run the full simulation non-interactively.  
+
+When debug mode is active (debug = 1), a menu like the following will appear:
+
+```bash
 >h
-r: ver los registros
-t: traza
-e: ejecutar
-s: desensamblador
-i: ver cinta entrada
-o: ver cinta salida
-h: ayuda
-x: salir
->
+r: view registers
+t: trace
+e: execute
+s: disassemble
+i: view input tape
+o: view output tape
+h: help
+x: exit
 ```
 
-El valor 0 lleva a cabo la simulación completa. Al finalizar la misma, sólo
-deberá mostrarse por consola el número total de instrucciones ejecutadas.
+If debug is set to 0, the simulation runs completely and prints only the total number of executed instructions.
+
+---
+
+## 🛠️ Built With
+
+* C++
+
+---
+
+> **Disclaimer:** This project was developed during my university studies and reflects my knowledge at that time. The code may not follow modern best practices.
+
+---
+
+## 📫 Contact
+
+Ángel Tornero Hernández 📧 angeltornerohdez@gmail.com  
+
+Project Link: https://github.com/Angel-Tornero/random-access-machine-simulator-cpp
+
+---
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555  
+[linkedin-url]: https://www.linkedin.com/in/%C3%A1ngel-tornero-hern%C3%A1ndez-173192225/
