@@ -14,7 +14,9 @@ The simulator supports a debug mode that provides step-by-step execution with vi
 
 To execute the simulator, use the following format:
 
+```bash
 ./ram_sim ram_program.ram input_tape.in output_tape.out debug
+```
 
 - ram_program.ram: file containing the RAM program.  
 - input_tape.in: file containing the input tape.  
@@ -23,7 +25,7 @@ To execute the simulator, use the following format:
 
 When debug mode is active (debug = 1), a menu like the following will appear:
 
-```bash
+```
 >h
 r: view registers
 t: trace
